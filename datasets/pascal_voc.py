@@ -27,7 +27,8 @@ class pascal:
         and SBD train.
         """
         segset_dir = '{}/ImageSets/Segmentation'.format(self.dir)
-        return open('{}/seg11valid.txt'.format(segset_dir)).read().splitlines()
+        #return open('{}/seg11valid.txt'.format(segset_dir)).read().splitlines()
+        return open('{}/val.txt'.format(segset_dir)).read().splitlines()
 
     def load_image(self, idx):
         im = Image.open('{}/JPEGImages/{}.jpg'.format(self.dir, idx))

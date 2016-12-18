@@ -1,5 +1,6 @@
 import sys
-sys.path.append('../../python')
+#sys.path.append('../../python')
+sys.path.append('../caffe/python')
 
 import caffe
 from caffe import layers as L, params as P
